@@ -1,5 +1,7 @@
 # LuaGuide
 
+This is a WIP and not yet finished. I'm finishing up the last few sections.
+
 [Lua Crash Course by PohkaDev](https://www.youtube.com/watch?v=kgiEF1frHQ8)
 
 [Lua Math](http://lua-users.org/wiki/MathLibraryTutorial)

@@ -1,29 +1,36 @@
 # LuaGuide
 
-This is a WIP and not yet finished. I'm finishing up the last few sections.
+[Lua Official Documentation](https://www.lua.org/docs.html)
 
 [Lua Crash Course by PohkaDev](https://www.youtube.com/watch?v=kgiEF1frHQ8)
 
-[Lua Math](http://lua-users.org/wiki/MathLibraryTutorial)
-
-[Lua Official Documentation](https://www.lua.org/docs.html)
-
 [Lua Reference Guide by Pohka](https://github.com/pohka/Lua-Beginners-Guide)
 
-[Tic80 Learn](https://tic80.com/learn)
+[Lua Math](http://lua-users.org/wiki/MathLibraryTutorial)
 
-[Tic80 Wiki](https://github.com/nesbox/TIC-80/wiki)
-
-A mostly reasonable approach to Lua curated around Tic80.
+A mostly reasonable approach to Lua.
 
 Contributors are welcome.
 
+TODO:
+- Move table of content buttons to top of headers with a [ToC]
+- Add a section on how to use this document
+- italicise variables
+- Add subheading to ToC like 1.1, 1.2, 2.1, 2.2
+- Explain more in the sections
+- Add a few sections from Lua Reference Guide 
+- At least two examples per section
+- Add introductory section
+
 ## Table of Contents
+  1. [Table of Contents](#table-of-contents)
+  1. [Using this Documemnt](#using-this-document)
+  1. [About Lua](#about-lua)
   1. [Values and Types](#values-and-types)
   1. [Keywords](#keywords)
   1. [Variables](#variables)
-  1. [Functions](#functions)
   1. [Comments](#comments)
+  1. [Functions](#functions)
   1. [Semicolons](#semicolons)
   1. [Naming Convention](#naming-convention)
   1. [Scope](#scope)
@@ -32,7 +39,21 @@ Contributors are welcome.
   1. [Math](#math)
   1. [License](#license)
 
-## Values and Types
+### Using this Document 
+**[ToC](#table-of-contents)**
+
+While writing this document, I attempted to make it easy to read, as well as easy to find what you're looking for.
+
+In most cases, when a word or letter is highlighted, it is referring to a variable value or type. For example, if I write "`true`" it refers to a true `boolean`.
+
+For convience, below each header there is a link to the Table of Contents labeled "**[ToC](#table-of-contents)**".
+
+## About Lua
+**[ToC](#table-of-contents)**
+
+## Values and Types 
+**[ToC](#table-of-contents)**
+
 **Primitives**
 
 There are six primitive types in Lua: `nil`, `boolean`, `number`, `string`. 
@@ -123,9 +144,9 @@ local function snake_case()
 end
 ```
 
-**[Return to the Table of Contents](#table-of-contents)**
-
 ## Keywords
+**[ToC](#table-of-contents)**
+
 Names (also called identifiers) in Lua can be any string of Latin letters, Arabic-Indic digits, and underscores, not beginning with a digit and not being a reserved word. 
 
 Identifiers are used to name variables, table fields, and labels.
@@ -156,9 +177,8 @@ The following keywords are reserved and cannot be used as names:
 
 Lua is a case-sensitive language: `and` is a reserved word, but And and AND are two different, valid names. As a convention, programs should avoid creating names that start with an underscore followed by one or more uppercase letters.
 
-**[Return to the Table of Contents](#table-of-contents)**
-
 ## Variables
+**[ToC](#table-of-contents)**
 
 **Arithmetic Operators**
 Lua supports the following arithmetic operators:
@@ -253,9 +273,8 @@ Here are some examples:
 - false or nil = nil
 - 10 and 20 = 20
 
-**[Return to the Table of Contents](#table-of-contents)**
-
-## Comments - TODO: Add this section, explaination for the single and multi line comment and two seperate examples
+## Comments
+**[ToC](#table-of-contents)**
 
 Single line comments are created using `--`.
 
@@ -275,9 +294,8 @@ print("HelloWorld")
 print("HelloWorldd") -- same line comment
 ```
 
-**[Return to the Table of Contents](#table-of-contents)**
-
-## Functions - TODO: Add this section, explaination for the different functions and one example minimum for each
+## Functions
+**[ToC](#table-of-contents)**
 
 Passing an argument through the `function`.
 
@@ -332,7 +350,8 @@ end
 snake_case()
  ```
 
-## Semicolons - TODO: Explain more
+## Semicolons
+**[ToC](#table-of-contents)**
 
 Semi-colons in Lua are generally only required when writing multiple statements on a line.
 
@@ -347,13 +366,12 @@ local a,b=1,2
 print(a+b)
 ```
 
-**[Return to the Table of Contents](#table-of-contents)**
+## Naming Convention
+**[ToC](#table-of-contents)**
 
-## Naming Convention TODO: Add this section, explaination and two examples
+## Scope
+**[ToC](#table-of-contents)**
 
-**[Return to the Table of Contents](#table-of-contents)**
-
-## Scope TODO: Add this section, explaination and two examples
 Variables have different scopes. Once the end of the scope is reached the values in that scope are no longer accessable
 ```lua
 function foo()
@@ -376,9 +394,9 @@ local _G.myValue  =  69
 -- doing this can sometimes be bad practice
 ```
 
-**[Return to the Table of Contents](#table-of-contents)**
+## Loops
+**[ToC](#table-of-contents)**
 
-## Loops TODO: Add this section, explaination and two examples
 There is a few different ways you can do a loop in lua
 ```lua
 -- while loop
@@ -417,9 +435,9 @@ end
 print(count) --  100
 ```
 
-**[Return to the Table of Contents](#table-of-contents)**
+## Tables
+**[ToC](#table-of-contents)**
 
-## Tables TODO: Add this section, explaination and two examples
 ```lua
 -- basic table
 local colors  =  { "red", "green", "blue" }
@@ -517,9 +535,9 @@ end
 print("Total score of all teams:" .. total)
 ```
 
-**[Return to the Table of Contents](#table-of-contents)**
+## Math
+**[ToC](#table-of-contents)**
 
-## Math TODO: Add this section, explaination and two examples
 The `math` class has a number of `functions` for dealing with numbers. There are plenty more but these are some of the more useful ones.
 
 * abs (absolute value)
@@ -566,32 +584,15 @@ The `math` class has a number of `functions` for dealing with numbers. There are
   print(math.sqrt(100)) -- result: 10
   ```
 
-**[Return to the Table of Contents](#table-of-contents)**
-
 ## License
+**[ToC](#table-of-contents)**
 
-MIT License
+MIT
 
-Copyright (c) 2023 Boden McHale
+Copyright 2023 Boden McHale
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-**[Return to the Table of Contents](#table-of-contents)**
-
-**[Return to LuaGuide](#luaguide)**Guide for Lua programming based around the Tic80 fantasy console.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
